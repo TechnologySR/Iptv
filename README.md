@@ -2,7 +2,7 @@
 
 Usage
 1. Open `playlist.m3u` with a compatible player (VLC, mpv, Kodi, etc.)
-2. Or use the raw file URL once pushed: https://raw.githubusercontent.com/TechnologySR/M3U_Playlist/refs/heads/main/README.md
+2. Or use the raw file URL once pushed: https://raw.githubusercontent.com/TechnologySR/Iptv/refs/heads/main/playlist.m3u
 
 Notes
 - Minimal normalization: moved the existing playlist content into `playlist.m3u` and removed the top-level repo title.
