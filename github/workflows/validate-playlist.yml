@@ -1,0 +1,14 @@
+name: Validate playlist
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check playlist header
+        run: |
+          if ! grep -q "^#EXTM3U" playlist.m3u; then
+            echo "playlist.m3u missing #EXTM3U header" >&2
+            exit 1
+          fi
+          echo "playlist.m3u header OK"
